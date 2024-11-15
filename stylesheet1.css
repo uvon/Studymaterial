@@ -1,53 +1,80 @@
+/* Global Reset and Font Settings */
 * {
     margin: 0;
     padding: 0;
-    font-family: century Gothic;
+    font-family: "Century Gothic", sans-serif;
 }
 
+/* Header Section */
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photo/fluid.png");
     height: 120vh;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Unordered List Styling */
 ul {
-    float: left;
+    display: flex;
     list-style-type: none;
     margin-top: 20px;
+    padding: 10px;
 }
 
-ul li a {
-    margin-left: 80px;
-    text-decoration: none;
-    color: #fff;
-    padding: 0;
-    transition: 0.6s ease;
-    height: auto;
-}
-
-ul li a:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.main {
-    max-width: 3000px;
-    margin: auto;
-}
-
-a {
-    font-size: 50px;
-}
-
-li {
-    border-color: rgb(29, 20, 20);
+/* List Items and Links */
+ul li {
+    margin: 0 20px; /* Space between items */
     border-radius: 10px;
 }
 
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: background-color 0.6s ease, color 0.6s ease;
+    display: inline-block;
+}
+
+/* Hover Effects for Links */
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for hover effect */
+}
+
+/* Main Content Container */
+.main {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* General Anchor Tags */
+a {
+    font-size: 20px; /* Adjusted to smaller size for global anchors */
+    transition: color 0.3s ease;
+}
+
+/* List Items Border Styling */
+li {
+    border: 1px solid rgba(29, 20, 20, 0.2); /* Subtle border */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Header Title Styling */
 h1 {
     padding: 20px;
     font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: antiquewhite;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect for better visibility */
 }
